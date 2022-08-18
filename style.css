@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: max-content;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+}
+
+.container {
+  background-image: url(images/header-shapes-mobile.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover;
+  width: 430px;
+  height: 718px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: #6070FF;
+  margin: 50px 20px 80px 20px;
+}
+
+#my-logo {
+  width: 76px;
+  height: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  align-content: center;
+  padding: 10px;
+}
+
+.header img {
+  fill: "#6070FF";
+  width: 30px;
+  height: 30px;
+}
+
+.headline {
+  margin: 50px 0 20px 20px;
+  box-sizing: border-box;
+  color: #172B4D;
+}
+
+.headline-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-right: 45px;
+  margin-bottom: 20px;
+}
+
+.headline p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 30px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.social-media-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7F8CFF;
+  text-transform: uppercase;
+}
+
+.social-media-icons {
+  list-style:none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
