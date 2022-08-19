@@ -7,6 +7,8 @@ body {
   max-width: max-content;
   font-family: 'Poppins', sans-serif;
   margin: 0 auto;
+  background-color: #e5e5e5;
+  display: block;
 }
 
 .container {
@@ -14,15 +16,21 @@ body {
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover;
-  width: 430px;
-  height: 718px;
+  border-bottom-left-radius: 100px;
+  background-color: white;
+  height: 600px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   color: #6070ff;
-  margin: 50px 20px 80px 20px;
+  padding: 50px 20px 50px 20px;
+  background-color: transparent;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 #my-logo {
@@ -46,19 +54,23 @@ body {
   fill: "#6070FF";
   width: 30px;
   height: 30px;
+  padding-right: 30px;
+  background-color: #ffffff36;
 }
 
 .headline {
-  margin: 50px 0 20px 20px;
+  margin: 0 0 20px 20px;
   box-sizing: border-box;
   color: #172b4d;
+  padding-bottom: 30px;
+  padding-top: 120px;
 }
 
 .headline-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  margin-right: 45px;
+  margin-right: 55px;
   margin-bottom: 20px;
 }
 
@@ -73,6 +85,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+  margin-bottom: 50px;
 }
 
 .social-media-title {
@@ -88,4 +101,166 @@ body {
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+.work-section {
+  margin: 80px 20px;
+  box-sizing: border-box;
+  color: #172b4d;
+  display: grid;
+  justify-content: space-between;
+}
+
+.work-section section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 70px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  border: #dfe1e6 1px solid;
+  border-radius: 10px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.section-subtitle {
+  display: grid;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr 2fr;
+  color: #7a869a;
+  align-items: center;
+  justify-items: center;
+}
+
+.canopy {
+  color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.tonic-section {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+section.tonic-section > * {
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.technologies {
+  display: grid;
+  text-decoration: none;
+  list-style: none;
+  grid-auto-flow: column;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 20% 25% 25% 30%;
+}
+
+.technologies > li {
+  background-color: #ebebff;
+  border-radius: 8px;
+  color: #6070ff;
+  padding: 3px 10px;
+}
+
+.button {
+  width: 124px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.button:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+.button:disabled {
+  color: #5e6c84;
+  background-color: white;
+}
+
+.button:focus {
+  background-color: #2230d2;
+  color: white;
+}
+
+.resume-button {
+  width: 140px;
+}
+
+.about-section {
+  padding-top: 50px;
+  background-color: white;
+  border-top-right-radius: 50px;
+  box-sizing: border-box;
+  color: #172b4d;
+  padding-bottom: 30px;
+}
+
+.headline-title2 {
+  margin-right: 95px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 20px;
+}
+
+.category {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px #dfe1e6 solid;
+}
+
+.technology-categories {
+  margin: 0 0 20px 20px;
+  list-style: none;
+  padding-right: 50px;
+}
+
+.detail {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  background-color: #f7f7f9;
+  align-items: center;
+  color: #253858;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.detail > img {
+  width: 48px;
+  height: 48px;
+  padding: 8px;
 }
