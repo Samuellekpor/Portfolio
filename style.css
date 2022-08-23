@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -51,7 +50,7 @@ body {
 }
 
 .header img {
-  fill: "#6070FF";
+  fill: #6070ff;
   width: 30px;
   height: 30px;
   padding-right: 30px;
@@ -185,6 +184,7 @@ section.tonic-section > * {
 .button {
   width: 124px;
   height: 48px;
+  float: left;
   border: 1px solid #6070ff;
   border-radius: 8px;
   font-weight: 500;
@@ -306,6 +306,7 @@ section.tonic-section > * {
 .contact form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .contact input {
@@ -324,6 +325,7 @@ section.tonic-section > * {
 }
 
 textarea {
+  box-sizing: border-box;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   color: #b3bac5;
@@ -335,4 +337,9 @@ textarea {
   font-size: 15px;
   line-height: 24px;
   height: 170px;
+  width: 327px;
+}
+
+.btn {
+  align-self: flex-start;
 }
