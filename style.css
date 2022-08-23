@@ -8,7 +8,6 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0 auto;
   background-color: #e5e5e5;
-  display: block;
 }
 
 .container {
@@ -51,7 +50,7 @@ body {
 }
 
 .header img {
-  fill: "#6070FF";
+  fill: #6070ff;
   width: 30px;
   height: 30px;
   padding-right: 30px;
@@ -185,6 +184,7 @@ section.tonic-section > * {
 .button {
   width: 124px;
   height: 48px;
+  float: left;
   border: 1px solid #6070ff;
   border-radius: 8px;
   font-weight: 500;
@@ -220,7 +220,7 @@ section.tonic-section > * {
   border-top-right-radius: 50px;
   box-sizing: border-box;
   color: #172b4d;
-  padding-bottom: 30px;
+  padding-bottom: 160px;
 }
 
 .headline-title2 {
@@ -263,4 +263,82 @@ section.tonic-section > * {
   width: 48px;
   height: 48px;
   padding: 8px;
+}
+
+.contact {
+  background-image: url(images/contact-form-shapes-mobile.svg);
+  background-color: #6070ff;
+  border-top-left-radius: 60px;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 779px;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.contact h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  padding-top: 103px;
+  margin-bottom: 12px;
+}
+
+.contact p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  margin-bottom: 55px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 327px;
+  height: 48px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+textarea {
+  box-sizing: border-box;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 22px;
+  padding: 15px 38px 15px 16px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  height: 170px;
+  width: 327px;
+}
+
+.btn {
+  align-self: flex-start;
 }
