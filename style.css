@@ -248,6 +248,10 @@ section.tonic-section > * {
   padding-right: 50px;
 }
 
+.languages {
+  border-bottom: 0;
+}
+
 .detail {
   display: flex;
   justify-content: start;
@@ -272,7 +276,6 @@ section.tonic-section > * {
   background-position: right;
   background-repeat: no-repeat;
   height: 779px;
-  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -498,8 +501,110 @@ br {
     padding: 10px;
   }
 
+  .about-section {
+    padding: 140px 10%;
+    border-radius: 0%;
+    display: flex;
+  }
+
+  .headline.about {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .about-description-section {
+    flex: 1;
+    padding-right: 40px;
+    margin-right: 10px;
+  }
+
+  .technology-categories {
+    flex: 1;
+  }
+
+  .button.resume-button {
+    margin-top: 40px;
+  }
+
+  .about-description-section p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .detail {
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+  }
+
+  .detail-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   .technologies {
     margin-bottom: 45px;
+  }
+
+  .contact {
+    background-image: url(images/contact-form-background-shapes.svg);
+    background-color: #6070ff;
+    border-top-left-radius: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    height: 846px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin-top: -90px;
+  }
+
+  .contact-header h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 30px;
+  }
+
+  .contact-header p {
+    max-width: 569px;
+    height: 102px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+
+  .contact input {
+    border: 1px solid #cfd8dc;
+    border-radius: 2px;
+    height: 48px;
+    width: 447px;
+    border-radius: 2px;
+  }
+
+  .contact textarea {
+    height: 170px;
+    width: 447px;
+    border-radius: 2px;
+  }
+
+  .btn {
+    align-self: center;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .mobile {
