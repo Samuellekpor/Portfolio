@@ -71,12 +71,67 @@ body {
   transition: all 0.6s ease-in-out;
 }
 
-.header img {
-  fill: #6070ff;
-  width: 30px;
-  height: 30px;
-  padding-right: 30px;
-  background-color: #ffffff36;
+.nav-bar-list {
+  display: none;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  width: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.nav-bar-list.active {
+  display: flex;
+}
+
+.nav-bar-list li {
+  list-style: none;
+}
+
+.nav-bar-list li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  margin-right: 30px;
+}
+
+.bar {
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: #6070ff;
+  border-radius: 20%;
+  margin: 5px auto;
+  border: 0.5px solid #ffffff36;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+.toggle-btn.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle-btn.active .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+  background-color: #fff;
+  height: 1.5px;
+}
+
+.toggle-btn.active .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+  background-color: #fff;
+  height: 1.5px;
 }
 
 .headline {
