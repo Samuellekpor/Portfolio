@@ -52,16 +52,31 @@ body {
   text-decoration: none;
 }
 
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.6s ease-in-out;
+}
+
+.nav-bar.active {
+  top: 0;
+  left: 0;
+  position: initial;
+  height: 600vh;
+  justify-content: flex-start;
+  background: #6070ffc2;
+  transition: all 0.6s ease-in-out;
+}
+
 .header img {
   fill: #6070ff;
   width: 30px;
   height: 30px;
   padding-right: 30px;
   background-color: #ffffff36;
-}
-
-.nav-bar {
-  display: none;
 }
 
 .headline {
