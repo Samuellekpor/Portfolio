@@ -1,4 +1,3 @@
-
 * {
   padding: 0;
   margin: 0;
@@ -45,6 +44,16 @@ body {
   animation: rotate-center 0.6s ease-in-out 0.5s both;
 }
 
+.nav-bar-list li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 #my-logo a {
   color: #6070ff;
   text-decoration: none;
@@ -53,7 +62,6 @@ body {
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: column;
   align-items: flex-start;
   transition: all 0.6s ease-in-out;
@@ -85,16 +93,6 @@ body {
 
 .nav-bar-list li {
   list-style: none;
-}
-
-.nav-bar-list li a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  padding: 1rem;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
 }
 
 .toggle-btn {
@@ -421,7 +419,6 @@ br {
 .desktop {
   display: none;
 }
-1:12
 
 @media (min-width: 768px) {
   .toggle-btn {
@@ -444,7 +441,6 @@ br {
     height: 722px;
     margin: 70px 8px 40px 35px;
     align-content: center;
-    padding: 0 auto;
   }
 
   .nav-bar {
