@@ -73,3 +73,96 @@ const data = [
     source: true
   },
 ]
+
+const big_container = document.getElementById('big-container');
+
+function insertAfter(referenceNode, newNode) {
+  referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
+
+function createDom() {
+
+  const work_section = document.createElement('div');
+
+  work_section.className = 'work-section';
+  work_section.id = 'portfolio';
+
+  Object.keys(data).forEach((key) => {
+    const section = document.createElement('section');
+    section.className = 'tonic-section';
+  
+    const img = document.createElement('img');
+    img.className = 'tonic-section-image';
+    img.src = data[key].image;
+  
+    const descCont = document.createElement('div');
+    descCont.className = 'tonic-section-description';
+  
+    const titleC = document.createElement('h2');
+    titleC.className = 'section-title';
+    titleC.textContent = data[key].title;
+  
+    const subEl = document.createElement('div');
+    subEl.className = 'section-subtitle';
+  
+    const authorName = document.createElement('h6');
+    authorName.className = 'canopy';
+    authorName.textContent = data[key].sub_title.author;
+  
+    const separator = document.createElement('img');
+    separator.src = 'images/Counter.svg';
+
+    const separator1 = document.createElement('img');
+    separator1.src = 'images/Counter.svg';
+  
+    const jobPost = document.createElement('h6');
+    jobPost.textContent = data[key].sub_title.job;
+  
+    const projectYear = document.createElement('h6');
+    projectYear.textContent = data[key].sub_title.year;
+  
+    const desc = document.createElement('p');
+    desc.className = 'section-description';
+    desc.textContent = data[key].description;
+  
+    const tech = document.createElement('ul');
+    tech.className = 'technologies';
+  
+    const {technologies} = data[key];
+  
+    Object.keys(technologies).forEach((key) => {
+      const t = document.createElement('li');
+      t.textContent = technologies[key];
+      tech.appendChild(t);
+    });
+  
+    const butt = document.createElement('button');
+    butt.className = 'button';
+    butt.type = 'button';
+    butt.innerHTML = 'See Project';
+  
+    work_section.appendChild(section);
+    section.appendChild(img);
+    section.appendChild(descCont);
+    descCont.appendChild(titleC);
+    descCont.appendChild(subEl);
+    subEl.appendChild(authorName);
+    subEl.appendChild(separator1);
+    subEl.appendChild(jobPost);
+    subEl.appendChild(separator);
+    subEl.appendChild(projectYear);
+    descCont.appendChild(desc);
+    descCont.appendChild(tech);
+    descCont.appendChild(butt);
+  
+    insertAfter(big_container, work_section);
+  });
+
+}
+
+
+window.addEventListener('load', () => {
+  createDom();
+});
+
+
