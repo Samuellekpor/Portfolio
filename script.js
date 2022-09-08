@@ -169,7 +169,7 @@ function createDom() {
       const modal = document.querySelector('.modal-container');
       const name = document.querySelector('.section-title');
       const mImage = document.getElementById('tonic-section-imageM');
-      const mImageD = document.getElementById('tonic-section-imageD')
+      const mImageD = document.getElementById('tonic-section-imageD');
       const company = document.getElementById('company');
       const jobb = document.getElementById('job');
       const year = document.getElementById('year');
