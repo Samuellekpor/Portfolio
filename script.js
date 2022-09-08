@@ -156,9 +156,43 @@ function createDom() {
     descCont.appendChild(butt);
   
     insertAfter(big_container, work_section);
-  });
 
+    butt.addEventListener('click', () => {
+      const modal = document.querySelector('.modal-container');
+      const name = document.querySelector('.section-title');
+      const mImage = document.getElementById('tonic-section-image');
+      const company = document.getElementById('company');
+      const job = document.getElementById('job');
+      const year = document.getElementById('year');
+      const descript = document.getElementById('section-description');
+      const techno = document.getElementById('techno');
+      const menu = document.querySelector('.header');
+  
+      name.textContent = data[key].title;
+      company.textContent = data[key].sub_title.author;
+      job.textContent = data[key].sub_title.job;
+      year.textContent = data[key].sub_title.year;
+      descript.innerHTML = data[key].commplete_desc;
+  
+      for(let i= 0; i <data[key].technologies.length; i++) {
+        const t = document.createElement('li');
+        t.textContent = data[key].technologies[i];
+        techno.appendChild(t);
+      }
+      
+      menu.style.display = 'none';
+      mImage.src = data[key].image;
+      modal.classList.add('show');
+    })
+  });
 }
+
+const close = document.querySelector('.close');
+const modal = document.querySelector('.modal-container');
+
+close.addEventListener('click',() => {
+  modal.style.display = 'none';
+})
 
 
 window.addEventListener('load', () => {
