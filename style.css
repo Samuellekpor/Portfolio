@@ -458,7 +458,7 @@ br {
 
 .modal-container.show {
   display: flex;
-  box-shadow: 2px 2px 2px rgba(72, 69, 69, 0.541);
+  box-shadow: 2px 2px 2px #4845458a;
 }
 
 .modal-title {
@@ -467,9 +467,26 @@ br {
   align-items: center;
 }
 
+small {
+  color: #850000;
+  max-width: 327px;
+  text-align: left;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  transition: all 0.4s ease-in;
+}
+
+.error {
+  border-color: #850000;
+}
+
 @media (min-width: 768px) {
   .toggle-btn {
     display: none;
+  }
+
+  small {
+    max-width: 447px;
   }
 
   .big-container {
