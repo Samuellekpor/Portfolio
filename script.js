@@ -278,3 +278,24 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+const contactForm = document.querySelector('#form');
+const userData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+contactForm.addEventListener('change', () => {
+  userData.name = document.querySelector('#name').value;
+  userData.email = document.querySelector('#email').value;
+  userData.message = document.querySelector('#text').value;
+
+  localStorage.setItem('content', JSON.stringify(userData));
+});
+const dataOBJ = JSON.parse(localStorage.getItem('content'));
+if (dataOBJ) {
+  document.querySelector('#name').value = dataOBJ.name;
+  document.querySelector('#email').value = dataOBJ.email;
+  document.querySelector('#text').value = dataOBJ.message;
+}
