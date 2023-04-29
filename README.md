@@ -13,7 +13,7 @@
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/Samuellekpor)
+- GitHub: [@Samuellekpor](https://github.com/Samuellekpor)
 - Twitter: [@twitterhandle](https://twitter.com/samuel_lekpor)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sammuel-lekpor)
 
