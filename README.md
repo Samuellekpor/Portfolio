@@ -14,8 +14,8 @@
 👤 **Author**
 
 - GitHub: [@Samuellekpor](https://github.com/Samuellekpor)
-- Twitter: [@twitterhandle](https://twitter.com/samuel_lekpor)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/sammuel-lekpor)
+- Twitter: [@samuel_lekpor](https://twitter.com/samuel_lekpor)
+- LinkedIn: [sammuel-lekpor](https://linkedin.com/in/sammuel-lekpor)
 
 ## 🤝 Contributing
 
